@@ -9,10 +9,8 @@ class App extends Component {
     return (
       <div className="App">
       <AppNav></AppNav>
-        <div className="AppContainer">
           <Profile></Profile>
           <Feed></Feed>
-        </div>
       </div>
     );
   }

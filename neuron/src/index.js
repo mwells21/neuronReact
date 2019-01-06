@@ -15,7 +15,7 @@ import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 const rounting = (
     <Router>
         <React.Fragment>
-            <Route path="/" component = {App} />
+            <Route exact path="/" component = {App} />
             <Route path="/Patients" component = {Patients}/>
             <Route path="/Pathology" component = {Pathology}/>
             <Route path="/Surgery" component = {Surgery}/>

@@ -36,10 +36,10 @@ class AppNav extends Component {
                             <NavLink href="/Patients/">PATIENTS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/Pathology/">PATHOLOGY</NavLink>
+                            <NavLink href="/Surgery/">SURGERY</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/Surgery/">SURGERY</NavLink>
+                            <NavLink href="/Pathology/">BANK</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
