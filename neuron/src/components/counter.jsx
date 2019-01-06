@@ -6,6 +6,28 @@ class Counter extends Component {
         tags: ['tag1','tag2','tag3']
     };
 
+//    constructor(){
+//        super();
+//        this.handleIncrement = this.handleIncrement.bind(this);
+//        console.log("Constructor", this );
+//   }
+// Event Handeling 
+
+//    handleIncrement(){
+//        console.log("Increment Clicked",this);
+//    }
+// 
+// or 
+
+    handleIncrement = () => {
+        console.log("Increment Clicked", this);
+        // this.state.count++ // wont work, doesnt know anything changed 
+        // this.setState tells react the dom needs to change 
+        this.setState({ count: this.state.count + 1});
+    };
+
+
+
     styles = {
         fontSize: '50px',
         fontWeight: 'bold'
@@ -29,7 +51,12 @@ class Counter extends Component {
         // key is the uuid
         <div> 
             <span className={this.getBadgeClasses()}>{this.formatCount()}</span>       
-            <button className ="btn btn-secondary btn-sm">Increment</button>
+            <button 
+                onClick={this.handleIncrement} 
+                className ="btn btn-secondary btn-sm"
+            >
+                Increment
+            </button>
             {this.state.tags.length === 0 && 'Please Create a New Tag'}
             {this.renderTags()}
         </div> 

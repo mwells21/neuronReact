@@ -5,7 +5,28 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import Counter from './components/counter';
-ReactDOM.render(<Counter />, document.getElementById('root'));
+import Feed from './components/feed';
+import Profile from './components/profile';
+import Patients from './components/patients';
+import Pathology from './components/pathology';
+import Surgery from './components/surgery';
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
+
+const rounting = (
+    <Router>
+        <React.Fragment>
+            <Route path="/" component = {App} />
+            <Route path="/Patients" component = {Patients}/>
+            <Route path="/Pathology" component = {Pathology}/>
+            <Route path="/Surgery" component = {Surgery}/>
+        </React.Fragment>
+    </Router>
+
+
+)
+
+
+ReactDOM.render(rounting, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
