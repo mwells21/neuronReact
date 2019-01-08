@@ -1,0 +1,2 @@
+export const GET_TRIALS = 'GET_TRIALS'
+export const TRIALS_LOADING = 'TRIALS_LOADING'

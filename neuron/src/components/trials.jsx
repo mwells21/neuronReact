@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import SimpleMap from './map';
 import AppNav from './appNav';
-import axios from 'axios';
+import { connect } from 'react-redux';
+import { getTrials } from '../actions/trialActions';
 
 import { Container, Row, Col, ListGroup, ListGroupItem, UncontrolledCollapse, Button, CardBody, Card  } from 'reactstrap';
 
+
+
+
 class Trials extends Component {
+
+//componentDidMount(){
+//    this.props.getTrials();
+//}
+
+
+
+
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
@@ -29,10 +41,11 @@ class Trials extends Component {
                                 lat:"42.3314"
                             }
                         ] };
-      }
+     }
     toggle() {
      this.setState({ collapse: !this.state.collapse });
     }
+
     render() { 
         return (
             <React.Fragment>
