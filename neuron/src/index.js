@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Counter from './components/counter';
 import Feed from './components/feed';
 import Profile from './components/profile';
 import Patients from './components/patients';
 import Pathology from './components/pathology';
 import Surgery from './components/surgery';
+import TumorBoardTable from './components/tumorBoardTable';
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 
 const rounting = (

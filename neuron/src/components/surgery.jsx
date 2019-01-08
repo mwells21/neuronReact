@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import AppNav from './appNav';
 
 class Surgery extends Component {
 
     render() { 
-        return ( <h1>Surgery</h1> );
+        return (         
+        <React.Fragment>
+            <AppNav></AppNav>
+            <h1>Surgery</h1>
+        </React.Fragment>  );
     }
 }
  
