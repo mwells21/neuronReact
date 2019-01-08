@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import SimpleMap from './map';
 import AppNav from './appNav';
+import axios from 'axios';
+
 import { Container, Row, Col, ListGroup, ListGroupItem, UncontrolledCollapse, Button, CardBody, Card  } from 'reactstrap';
 
 class Trials extends Component {
