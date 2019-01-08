@@ -15,7 +15,7 @@ class Feed extends Component {
     
     render() { 
         return (
-           <div>
+           <div className={"feedConatiner"}>
                    {this.renderFeed()}
 
            </div> 
@@ -23,9 +23,18 @@ class Feed extends Component {
     }
 
     renderFeed(){
-        return <ListGroup>{this.state.posts.map(post => <ListGroupItem key = {post}>{post}</ListGroupItem>)}</ListGroup>;
+        return (
+            <ListGroup>
+            {this.state.posts.map(post => 
+            <ListGroupItem 
+                key = {post}>{post}
+            </ListGroupItem>)}
+            </ListGroup>
+        )
+
         //return <ul>{ this.state.posts.map(post => <li key = {post}>{post}</li>) }</ul>;
     }
+
 
 
 
