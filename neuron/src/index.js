@@ -11,6 +11,7 @@ import Patients from './components/patients';
 import Pathology from './components/pathology';
 import Surgery from './components/surgery';
 import TumorBoardTable from './components/tumorBoardTable';
+import Trials from './components/trials'; 
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 
 const rounting = (
@@ -20,6 +21,7 @@ const rounting = (
             <Route path="/Patients" component = {Patients}/>
             <Route path="/Pathology" component = {Pathology}/>
             <Route path="/Surgery" component = {Surgery}/>
+            <Route path="/Trials" component = {Trials}/>
         </React.Fragment>
     </Router>
 
