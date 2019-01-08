@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SimpleMap from './map';
 import AppNav from './appNav';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, ListGroup, ListGroupItem  } from 'reactstrap';
 
 class Trials extends Component {
     state = {  }
@@ -14,6 +14,8 @@ class Trials extends Component {
                         <SimpleMap></SimpleMap>
                     </Col>
                     <Col>
+                    <ListGroup>
+                    </ListGroup>                    
                     </Col>
                 </Row>                
             </React.Fragment>
