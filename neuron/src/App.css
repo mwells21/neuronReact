@@ -5,12 +5,17 @@
 
 }
 
+a.nav-link{
+  color : #003b71;
+}
 
+a.navbar-brand{
+  color:#003b71;
+}
 
-
-
-nav.mb-5.navbar.navbar-expand-md.navbar-dark.bg-primary{
-  background-color: slategray !important;
+nav.mb-5.navbar.navbar-expand-md.navbar-light .bg-primary{
+  background-color: #ffff !important;
+  color: #003b71;
 }
 
 .App{
@@ -19,6 +24,7 @@ nav.mb-5.navbar.navbar-expand-md.navbar-dark.bg-primary{
   height: 100%;
   min-height: 100%
 }
+
 
 .feedConatiner{
   min-height: 1000px;

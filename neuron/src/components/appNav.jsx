@@ -27,7 +27,7 @@ class AppNav extends Component {
     render(){
         return(
             <div>
-            <Navbar color ="primary" dark expand="md" className = "mb-5" >
+            <Navbar color ="primary"color= "light" expand="md" className = "mb-5" >
                 <NavbarBrand href="/">Hermelin Brain Tumor Center</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
