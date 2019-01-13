@@ -11,13 +11,6 @@ import { Container, Row, Col, ListGroup, ListGroupItem, UncontrolledCollapse, Bu
 
 class Trials extends Component {
 
-//componentDidMount(){
-//    this.props.getTrials();
-//}
-
-
-
-
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
