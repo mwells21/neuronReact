@@ -10,12 +10,12 @@
 
 
 nav.mb-5.navbar.navbar-expand-md.navbar-dark.bg-primary{
-  background-color: slategray !important;
+  background-color: #003b71 !important;
 }
 
 .App{
   position: relative;
-  background-color: #003b71;
+  background-color: #d9e1ec;
   height: 100%;
   min-height: 100%
 }
