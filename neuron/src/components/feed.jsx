@@ -2,6 +2,25 @@ import React, { Component } from 'react';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 
 class Feed extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            posts:[]
+        }
+    }
+
+
+
+    componentWillMount(){
+        console.log("Hello World")
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(res=>res.json())
+        .then(data=>this.setState({posts:data}))
+    }
+
+
+
     state = {
         user: 'Michael Wells',
         group: 'Research',
@@ -14,26 +33,28 @@ class Feed extends Component {
 
     
     render() { 
-        return (
-           <div className={"feedConatiner"}>
-                   {this.renderFeed()}
+        const postItems = this.state.posts.map(post=>
+            <div key = {post.id}>
+            <ListGroupItem>
+                {post.body}
+            </ListGroupItem>
 
-           </div> 
+            </div>
+            )
+        return (
+           <React.Fragment>
+            <ListGroup>
+                {postItems}
+            </ListGroup>
+           </React.Fragment> 
           );
+          
     }
 
-    renderFeed(){
-        return (
-            <ListGroup>
-            {this.state.posts.map(post => 
-            <ListGroupItem 
-                key = {post}>{post}
-            </ListGroupItem>)}
-            </ListGroup>
-        )
+
 
         //return <ul>{ this.state.posts.map(post => <li key = {post}>{post}</li>) }</ul>;
-    }
+    
 
 
 

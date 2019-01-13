@@ -3,6 +3,7 @@ import './App.css';
 import AppNav from './components/appNav';
 import Feed from './components/feed';
 import Profile from './components/profile';
+import PostForm from './components/postForm';
 import { Container, Row, Col } from 'reactstrap';
 import {
   InputGroup,
@@ -56,20 +57,7 @@ class App extends Component {
               <Profile></Profile>
             </Col>
             <Col sm={{ size: '7', offset: 1 }}>
-              <InputGroup>
-                <InputGroupButtonDropdown addonType="prepend" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
-                  <Button outline>Post</Button>
-                  <DropdownToggle split outline />
-                  <DropdownMenu>
-                    <DropdownItem disabled>Groups</DropdownItem>
-                    <DropdownItem>Clinicians</DropdownItem>
-                    <DropdownItem>Paitents</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>ALL</DropdownItem>
-                  </DropdownMenu>
-                </InputGroupButtonDropdown>
-                <Input placeholder="and..." />
-              </InputGroup>
+            <PostForm></PostForm>
             <br></br>
               <Feed></Feed>
             </Col>
